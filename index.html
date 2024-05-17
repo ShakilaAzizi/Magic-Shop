@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Magic Shop, the Bookstore Cafe, where books come alive and coffee brews its charms. Immerse yourself in captivating stories, indulge in exceptional coffee, and join a community of book lovers and coffee enthusiasts. Discover our curated collection of books, from classics to contemporary gems, and savor our expertly crafted coffees, teas, and delectable treats. Experience the wonder of Magic Shop, where the realms of literature and coffee converge.">
+    <title>Magic Shop ( The Bookstore Cafe )</title>
+    <link rel="icon" href="images/smoke%20(1).png">
+    <!--bootstrap5 css--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!------>
+    <link rel="stylesheet" href="css-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        .carousel {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .carousel-item {
+            height: 40rem;
+            width: 100%;
+            background-color: black;
+            display: grid;
+            color: white;
+            background-position: center;
+            background-size: cover;
+        }
+        .overlay-image {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+     <body>
+    <!--the Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">Magic Shop</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Magic Shop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="contact.html#sign-in" class="signin">Sign in</a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!--The Slide Show-->
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <div class="overlay-image" style="background-image: url(images/slide1.jpg)">
+                </div>
+                <div class="mycontainer">
+                    <h1>Magic Shop</h1>
+                    <p>A Haven For Bookworms And Coffee Lovers.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="overlay-image" style="background-image: url(images/slide2.jpg)">
+                </div>
+                <div class="mycontainer">
+                    <h1>Magic Shop</h1>
+                    <p>A Haven For Bookworms And Coffee Lovers.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="overlay-image" style="background-image: url(images/slide3.jpg)">
+                </div>
+                <div class="mycontainer">
+                    <h1>Magic Shop</h1>
+                    <p>A Haven For Bookworms And Coffee Lovers.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="overlay-image" style="background-image: url(images/slide4.jpg)">
+                </div>
+                <div class="mycontainer">
+                    <h1>Magic Shop</h1>
+                    <p>A Haven For Bookworms And Coffee Lovers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bookstore -->
+    <div class="container">
+        <h2 class="text-center mb-5">Bookstore Specials</h2>
+        <div class="row justify-content-evenly">
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-6 col-md-5">
+                            <img src="images/It%20Ends%20with%20Us%20--%20Colleen%20Hoover.jpg" class="card-img img-fluid rounded-start" alt="book1">
+                        </div>
+                        <div class="col-6 col-md-7">
+                            <div class="card-body d-flex flex-column">
+                                <div class="h-100">
+                                    <h3 class="card-title"><a href="#">Magic Shop Bookstore</a></h3>
+                                    <h2 class="card-title">It Ends With Us</h2>
+                                    <h4 class="rate">4.2/5<strong>&#x2605;</strong> , By Collen Hoover</h4>
+                                    <hr>
+                                    <p class="card-text">Audiobook Available</p>
+                                    <h4 class="card-title mb-3">$<strong>15</strong></h4>
+                                </div>
+                                <div>
+                                    <button class="btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-6 col-md-5">
+                            <img src="images/It%20Starts%20with%20Us%20by%20Colleen%20Hoover.jpg" class="card-img img-fluid rounded-start" alt="book2">
+                        </div>
+                        <div class="col-6 col-md-7">
+                            <div class="card-body d-flex flex-column">
+                                <div class="h-100">
+                                    <h3 class="card-title"><a href="#">Magic Shop Bookstore</a></h3>
+                                    <h2 class="card-title">It Starts With Us</h2>
+                                    <h4 class="rate">4.1/5<strong>&#x2605;</strong> , By Collen Hoover</h4>
+                                    <hr>
+                                    <p class="card-text">Audiobook Available</p>
+                                    <h4 class="card-title mb-3">$<strong>38</strong></h4>
+                                </div>
+                                <div>
+                                    <button class="btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-evenly">
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-6 col-md-5">
+                            <img src="images/Book%20Lovers%20%E2%80%94%20EMILY%20HENRY.jpg" class="card-img img-fluid rounded-start" alt="book3">
+                        </div>
+                        <div class="col-6 col-md-7">
+                            <div class="card-body d-flex flex-column">
+                                <div class="h-100">
+                                    <h3 class="card-title"><a href="#">Magic Shop Bookstore</a></h3>
+                                    <h2 class="card-title">Book Lovers</h2>
+                                    <h4 class="rate">4.1/5<strong>&#x2605;</strong> , By Emily Henry</h4>
+                                    <hr>
+                                    <p class="card-text">Audiobook Available</p>
+                                    <h4 class="card-title mb-3">$<strong>18</strong></h4>
+                                </div>
+                                <div>
+                                    <button class="btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-6 col-md-5">
+                            <img src="images/Funny%20Story1.jpg" class="card-img img-fluid rounded-start" alt="book4">
+                        </div>
+                        <div class="col-6 col-md-7">
+                            <div class="card-body d-flex flex-column">
+                                <div class="h-100">
+                                    <h3 class="card-title"><a href="#">Magic Shop Bookstore</a></h3>
+                                    <h2 class="card-title">Funny Story</h2>
+                                    <h4 class="rate">4.4/5<strong>&#x2605;</strong> , By Emily Henry</h4>
+                                    <hr>
+                                    <p class="card-text">Audiobook Available</p>
+                                    <h4 class="card-title mb-3">$<strong>15</strong></h4>
+                                </div>
+                                <div>
+                                    <button class="btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Cafe Specials-->
+    <div class="container">
+        <h2 class="text-center mt-5">Cafe Specials</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="images/Baklava.png" alt="item1">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#">Magic Shop Cafe</a></h3>
+                        <h2 class="card-title">Baklava</h2>
+                        <p class="card-text">Indulge in the sweet delights of our authentic baklava. Layers of flaky pastry filled with a rich blend of nuts and honey, creating a heavenly treat that's both crunchy and sweet. Savor the taste of this traditional Mediterranean dessert that will transport you to faraway lands.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-4 mt-5">
+                        <h4 class="card-title">$<strong>15</strong></h4>
+                        <button class="btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="images/moci.jpg" alt="item2">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#">Magic Shop Cafe</a></h3>
+                        <h2 class="card-title">Mochi</h2>
+                        <p class="card-text">Experience the delightful chewiness of our Japanese mochi. These bite-sized treats feature a soft and velvety outer layer made from glutinous rice flour, filled with a variety of delightful flavors such as red bean, matcha, or fruity goodness. Each bite is a burst of unique and satisfying textures.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-4 mt-4">
+                        <h4 class="card-title">$<strong>5</strong></h4>
+                        <button class="btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="images/ggg.jpg" alt="item3">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#">Magic Shop Cafe</a></h3>
+                        <h2 class="card-title">Gelato</h2>
+                        <p class="card-text">Treat yourself to the creamy indulgence of our artisanal gelato. Made with the finest ingredients and crafted with passion, our gelato offers a rich and velvety texture that melts in your mouth. Choose from a variety of flavors, from classic favorites to unique creations, and take your taste buds on a delightful journey.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-4">
+                        <h4 class="card-title">$<strong>20</strong></h4>
+                        <button class="btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="images/Capuccino.jpg" alt="item4">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#">Magic Shop Cafe</a></h3>
+                        <h2 class="card-title">Cappuccino</h2>
+                        <p class="card-text">Start your day or take a break with our expertly crafted cappuccino. Our skilled baristas combine smooth espresso with creamy steamed milk, topped with a frothy layer of velvety foam. Sip on this classic Italian coffee beverage and savor the harmonious balance of flavors and the comforting aroma.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-4 mt-4">
+                        <h4 class="card-title">$<strong>5</strong></h4>
+                        <button class="btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="images/chai.jpg" alt="item5">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#">Magic Shop Cafe</a></h3>
+                        <h2 class="card-title">Masala Chai</h2>
+                        <p class="card-text">Experience the exotic blend of aromatic spices in our masala chai. This traditional Indian tea is infused with a medley of flavors, including cardamom, cinnamon, ginger, and cloves. Served hot and steeped to perfection, it offers a warming and invigorating experience that will awaken your senses.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-4 mt-4">
+                        <h4 class="card-title">$<strong>5</strong></h4>
+                        <button class="btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="images/matcha.jpg" alt="item6">
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#">Magic Shop Cafe</a></h3>
+                        <h2 class="card-title">Matcha</h2>
+                        <p class="card-text">Discover the beauty of Japanese tradition with our vibrant matcha. Made from finely ground green tea leaves, our matcha offers a vibrant emerald color and a distinct earthy flavor. Whether enjoyed as a traditional tea or incorporated into lattes and desserts, this antioxidant-rich ingredient provides a calming and revitalizing experience.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-4">
+                        <h4 class="card-title">$<strong>5</strong></h4>
+                        <button class="btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--the footer-->
+    <div class="container">
+        <hr>
+        <footer> &copy;2024 MagicShop TheBookstoreCafe</footer>
+    </div>
+    <!--bootstrap5 JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     </body>
+</html>
